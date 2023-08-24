@@ -30,91 +30,44 @@ function getIntervalName(selectedInterval) {
 
 function App() {
   const [selectedInterval, setSelectedInterval] = useState("weekly");
-  const WorkData = WORK[selectedInterval];
-  const playData = PLAY[selectedInterval];
-  const studyData = STUDY[selectedInterval];
-  const exerciseData = EXERCISE[selectedInterval];
-  const socialData = SOCIAL[selectedInterval];
-  const selfCareData = SELF_CARE[selectedInterval];
-
-  function WorkCard() {
-    return (
-      <CardWrapper>
-        <CardImage image={workImage} bgColor="bg-Light_red_work" />
-        <CardBody
-          title="Work"
-          interval={getIntervalName(selectedInterval)}
-          currentTime={WorkData.current}
-          previousTime={WorkData.previous}
-        />
-      </CardWrapper>
-    );
-  }
-  function PlayCard() {
-    return (
-      <CardWrapper>
-        <CardImage image={playImage} bgColor="bg-Soft_blue__play" />
-        <CardBody
-          title="Play"
-          currentTime={playData.current}
-          interval={getIntervalName(selectedInterval)}
-          previousTime={playData.previous}
-        />
-      </CardWrapper>
-    );
-  }
-  function StudyCard() {
-    return (
-      <CardWrapper>
-        <CardImage image={StudyImage} bgColor="bg-Light_red__study" />
-        <CardBody
-          title="Study"
-          currentTime={studyData.current}
-          interval={getIntervalName(selectedInterval)}
-          previousTime={studyData.previous}
-        />
-      </CardWrapper>
-    );
-  }
-  function ExerciseCard() {
-    return (
-      <CardWrapper>
-        <CardImage image={ExerciseImage} bgColor="bg-Lime_green__exercise" />
-        <CardBody
-          title="Exercise"
-          currentTime={exerciseData.current}
-          interval={getIntervalName(selectedInterval)}
-          previousTime={exerciseData.previous}
-        />
-      </CardWrapper>
-    );
-  }
-  function SocialCard() {
-    return (
-      <CardWrapper>
-        <CardImage image={SocialImage} bgColor="bg-Violet__social" />
-        <CardBody
-          title="Social"
-          currentTime={socialData.current}
-          interval={getIntervalName(selectedInterval)}
-          previousTime={socialData.previous}
-        />
-      </CardWrapper>
-    );
-  }
-  function SelfCareCard() {
-    return (
-      <CardWrapper>
-        <CardImage image={SelfCareImage} bgColor="bg-Soft_orange__self_care" />
-        <CardBody
-          title="Self Care"
-          currentTime={selfCareData.current}
-          interval={getIntervalName(selectedInterval)}
-          previousTime={selfCareData.previous}
-        />
-      </CardWrapper>
-    );
-  }
+  const cardData = [
+    {
+      title: "Work",
+      data: WORK,
+      image: workImage,
+      bgColor: "bg-Light_red_work",
+    },
+    {
+      title: "Play",
+      data: PLAY,
+      image: playImage,
+      bgColor: "bg-Soft_blue__play",
+    },
+    {
+      title: "Study",
+      data: STUDY,
+      image: StudyImage,
+      bgColor: "bg-Light_red__study",
+    },
+    {
+      title: "Exercise",
+      data: EXERCISE,
+      image: ExerciseImage,
+      bgColor: "bg-Lime_green__exercise",
+    },
+    {
+      title: "Social",
+      data: SOCIAL,
+      image: SocialImage,
+      bgColor: "bg-Violet__social",
+    },
+    {
+      title: "Self Care",
+      data: SELF_CARE,
+      image: SelfCareImage,
+      bgColor: "bg-Soft_orange__self_care",
+    },
+  ];
   return (
     <article className="mb-[5.063rem] md:mb-0 xl:flex xl:h-screen xl:items-center xl:justify-center">
       <main
@@ -131,12 +84,17 @@ function App() {
           className="md:grid md:grid-cols-2 md:grid-rows-4 md:items-center 
         md:gap-[1.87rem] xl:grid-cols-3 xl:grid-rows-2 "
         >
-          <WorkCard />
-          <PlayCard />
-          <StudyCard />
-          <ExerciseCard />
-          <SocialCard />
-          <SelfCareCard />
+          {cardData.map(({ title, data, bgColor, image }) => (
+            <CardWrapper>
+              <CardImage image={image} bgColor={bgColor} />
+              <CardBody
+                title={title}
+                currentTime={data[selectedInterval].current}
+                interval={getIntervalName(selectedInterval)}
+                previousTime={data[selectedInterval].previous}
+              />
+            </CardWrapper>
+          ))}
         </div>
       </main>
     </article>
