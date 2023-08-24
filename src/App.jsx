@@ -68,11 +68,37 @@ function App() {
       bgColor: "bg-Soft_orange__self_care",
     },
   ];
+  function Footer() {
+    return (
+      <div className="mb-[5.6rem] mt-10 flex flex-wrap items-center justify-center gap-3   xl:mt-[5rem]">
+        <div className="flex gap-1">
+          <p className=" text-Desaturated_blue">Challenge by:</p>
+          <a
+            href="https://www.frontendmentor.io?ref=challenge"
+            target="_blank"
+            className="text-Pale_Blue hover:text-white "
+          >
+            Frontend Mentor
+          </a>
+        </div>
+        <div className="flex gap-1">
+          <p className=" text-Desaturated_blue">Coded by:</p>
+          <a
+            href="https://github.com/mate1225"
+            target="_blank"
+            className="text-Pale_Blue hover:text-white"
+          >
+            Mészáros Máté
+          </a>
+        </div>
+      </div>
+    );
+  }
   return (
-    <article className="mb-[5.063rem] md:mb-0 xl:flex xl:h-screen xl:items-center xl:justify-center">
+    <article className=" xl:flex xl:h-screen xl:flex-col xl:items-center xl:justify-center">
       <main
         className="ml-6 mr-6 md:flex md:flex-col md:gap-5 xl:max-w-[90rem]
-       xl:flex-row xl:items-center xl:justify-center"
+        xl:flex-row xl:items-center xl:justify-center"
       >
         <Sidebar
           active={selectedInterval}
@@ -81,8 +107,8 @@ function App() {
           onMonthlyButtonClick={() => setSelectedInterval("monthly")}
         />
         <div
-          className="md:grid md:grid-cols-2 md:grid-rows-4 md:items-center 
-        md:gap-[1.87rem] xl:grid-cols-3 xl:grid-rows-2 "
+          className="md:grid md:grid-cols-2 md:grid-rows-3 md:items-center 
+           md:gap-[1.87rem] xl:grid-cols-3 xl:grid-rows-2 "
         >
           {cardData.map(({ title, data, bgColor, image }) => (
             <CardWrapper>
@@ -97,6 +123,9 @@ function App() {
           ))}
         </div>
       </main>
+      <div className="ml-3 mr-3 flex items-center justify-center ">
+        <Footer />
+      </div>
     </article>
   );
 }
