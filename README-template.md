@@ -28,82 +28,43 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it.
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![](assets/images/Screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Frontend_Mentor](https://your-solution-url.com)
+- Live Site URL: [Live_site](https://mate1225.github.io/Fronted-Mentor-time-tracking-dashboard/)
 
 ## My process
 
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
+- Flex box
 - CSS Grid
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- [Tailwind_css](https://tailwindcss.com/)
+- [vite](https://vitejs.dev/)
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+Before i started this project i hade to learn the foundations React And Tailwind css (for example: how to setup React and Tailwind css,how to create a jsx component ,how to use "useState",how to work in jsx....ect ).
 
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+What is think i struggled with the most is how to display the json data to the card components and at the end, how to deploy my project to github.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [Tailwind_css_Cheat_sheet](https://nerdcave.com/tailwind-cheat-sheet) - This is very use full if you just started to use Tailwind css
+- [Tailwind_css_installation](https://tailwindcss.com/docs/installation) - Use this guid if you don't know how to setup Tailwind css
+- [React_Learning_Website](https://scrimba.com/learn/learnreact) -Use this is you want to learn React but ,you don't know were to start.
+- [Github_deployment_guide](https://www.youtube.com/watch?v=XhoWXhyuW_I&list=PLdw9D_KypsPlfOU2NQXE_szt2J_2Moim0&index=1) - Use this guide to deploy your project to github (if you used vite to setup React).
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- Website - [Mészáros_Máté](https://mate1225.github.io/)
+- Frontend Mentor - [mate1225](https://www.frontendmentor.io/profile/mate1225)
+- Github - [mate1225](https://github.com/mate1225)
 
 ## Acknowledgments
 
