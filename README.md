@@ -43,7 +43,7 @@ Users should be able to:
 - Flex box
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
+- [React](https://reactjs.org/)
 - [Tailwind_css](https://tailwindcss.com/)
 - [vite](https://vitejs.dev/)
 
